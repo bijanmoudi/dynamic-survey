@@ -1,0 +1,14 @@
+
+/*======================================
+=            Loading Module            =
+======================================*/
+
+.m-loading {
+	display: block;
+	width: em( 50 );
+	height: em( 50 );
+	margin: 0 auto;
+	vertical-align: middle;
+	border-radius: em( $border-radius );
+	background: get-color( 'white', 0.85 ) url( '../img/loader.gif' ) center center no-repeat;
+}

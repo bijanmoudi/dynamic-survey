@@ -1,0 +1,22 @@
+
+/*======================================
+=            Message Module            =
+======================================*/
+
+.m-message {
+	padding: em( 7, 14 ) em( 21, 14 );
+	border-radius: rem( $border-radius );
+	background-color: get-color( 'white' );
+	box-shadow: 0 0 rem( 10 ) rgba( get-color( 'black' ), 0.25 );
+	font-size: em( 14 );
+	&.message {
+		&--fullwidth {
+			display: block;
+			width: 100%;
+		}
+		&--error {
+			background-color: get-color( 'red' );
+			color: get-color( 'white' );
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+/*===============================
+=            Helpers            =
+===============================*/
+
+
+// Functions
+
+@function em ( $input, $base : $body-font-size ) {
+	@return ( $input / $base ) * 1em;
+}
+
+@function rem ( $input, $base : 16 ) {
+	@return ( $input / $base ) * 1rem;
+}
+
+@function get-color( $color, $opacity : 1, $_colors : $colors ) {
+	@return rgba( map-get( $_colors, $color ), $opacity );
+}
+
+@function get-text-color( $background-color : #ffffff ) {
+	@if ( lightness( $background-color ) > 55 ) {
+		@return get-color( 'gray-dark' );
+	} @else {
+		@return get-color( 'white' );
+	}
+}
