@@ -520,6 +520,7 @@ h6,
 	align-self: center;
 	margin-top: .1875em;
 	line-height: 1.2;
+	text-align: left;
 	cursor: pointer;
 }
 
@@ -1233,6 +1234,7 @@ h6,
 
 .m-question .question__input {
 	width: 100%;
+	text-align: left;
 }
 
 .m-wizard .progress__status {
