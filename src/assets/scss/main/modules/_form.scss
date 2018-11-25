@@ -124,6 +124,7 @@ $border-width : 2px;
 					align-self: center;
 					margin-top: em( 3 );
 					line-height: 1.2;
+					text-align: left;
 					cursor: pointer;
 					@extend .noselect;
 					&::before {
