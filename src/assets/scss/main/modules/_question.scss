@@ -32,6 +32,7 @@
 			}
 			@include mq( $until : sm ) {
 				width: 100%;
+				text-align: left;
 			}
 		}
 	}
