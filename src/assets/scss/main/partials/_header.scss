@@ -1,0 +1,30 @@
+
+/*========================================
+=            Partial - Header            =
+========================================*/
+
+.l-header {
+	display: block;
+	.header {
+		&__logo-container {
+			display: block;
+			width: rem( 100 );
+			height: rem( 68 );
+			margin: 0 auto;
+			padding: em( 32 ) em( 16 ) em( 16 );
+			border-bottom-left-radius: rem( 3 * $border-radius );
+			border-bottom-right-radius: rem( 3 * $border-radius );
+			background-color: get-color( 'red' );
+			color: get-color( 'white' );
+			box-shadow: 0 0 em( $box-shadow-blur ) rgba( get-color( 'black' ), 0.25 );
+			transition: box-shadow 250ms ease;
+			&:focus {
+				box-shadow: 0 0 em( $box-shadow-blur ) rgba( get-color( 'black' ), 0.75 );
+			}
+		}
+		&__logo {
+			display: block;
+			fill: get-color( 'white' );
+		}
+	}
+}

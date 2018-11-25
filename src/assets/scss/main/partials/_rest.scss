@@ -1,0 +1,14 @@
+
+/*======================================
+=            Partial - Rest            =
+======================================*/
+
+.rest-container {
+	margin: em( 80 ) 0;
+	padding: 5%;
+	filter: blur( 2px );
+	font-size: em( 20 );
+	font-weight: 400;
+	text-align: center;
+	@extend .noselect;
+}

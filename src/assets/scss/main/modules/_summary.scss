@@ -1,0 +1,17 @@
+
+/*======================================
+=            Summary Module            =
+======================================*/
+
+.m-summary {
+	.summary {
+		&__item {
+			& + * {
+				margin-top: em( 35, 14 );
+				@include mq( $until : xs ) {
+					margin-top: em( 28, 14 );
+				}
+			}
+		}
+	}
+}
