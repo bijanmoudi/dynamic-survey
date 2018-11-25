@@ -4,7 +4,7 @@
 This repository is, in fact, an answer to the question initially raised by [LIQID Asset Management GmbH].
 
 You can find a demo here:
-https://bijanmoudi.github.io/dynamic-survey/dist/
+[https://bijanmoudi.github.io/dynamic-survey/dist/]
 
 
 
@@ -33,3 +33,4 @@ https://bijanmoudi.github.io/dynamic-survey/dist/
   - Filter questions with faulty data
 
 [LIQID Asset Management GmbH]: <https://www.liqid.de/>
+[https://bijanmoudi.github.io/dynamic-survey/dist/]: <https://bijanmoudi.github.io/dynamic-survey/dist/>
