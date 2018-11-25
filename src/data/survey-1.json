@@ -1,0 +1,95 @@
+{
+	"id": "1",
+	"title": "Who are you?",
+	"questions": [
+		{
+			"id": "1",
+			"title": "What's your name?",
+			"placeholder": "e.g. Bijan Moudi",
+			"type": "text",
+			"default": "",
+			"centered": true,
+			"validation": {
+				"required": true,
+				"pattern": "",
+				"prompts": {
+					"required": "I need to know your name before preceeding to next question :)",
+					"pattern": ""
+				}
+			}
+		},
+		{
+			"id": "2",
+			"title": "What's your gender?",
+			"type": "radio",
+			"default": "",
+			"centered": true,
+			"validation": {
+				"required": true,
+				"prompts": {
+					"required": "Let me know your gender to know how to call you :)"
+				}
+			},
+			"options": [
+				{
+					"id": "1",
+					"title": "Intersex"
+				},
+				{
+					"id": "2",
+					"title": "Female"
+				},
+				{
+					"id": "3",
+					"title": "Male"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"title": "Where are you comming from?",
+			"type": "select",
+			"default": "",
+			"centered": true,
+			"validation": {
+				"required": false,
+				"prompts": {
+					"required": false
+				}
+			},
+			"options": [
+				{
+					"id": "",
+					"title": "Choose if you want"
+				},
+				{
+					"id": "1",
+					"title": "LIQID"
+				},
+				{
+					"id": "2",
+					"title": "Project A"
+				},
+				{
+					"id": "3",
+					"title": "Google"
+				}
+			]
+		},
+		{
+			"id": "4",
+			"title": "What's your E-Mail address?",
+			"type": "text",
+			"default": "",
+			"centered": true,
+			"validation": {
+				"required": true,
+				"pattern": "^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$",
+				"prompts": {
+					"required": "It will just be used for next contacts",
+					"pattern": "Please enter a valid E-Mail"
+				}
+			}
+		}
+	]
+}

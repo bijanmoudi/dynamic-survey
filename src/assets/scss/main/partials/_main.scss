@@ -1,0 +1,13 @@
+
+/*======================================
+=            Partial - Main            =
+======================================*/
+
+.l-main {
+	display: block;
+	padding-top: rem( 70 );
+	@include mq( $until : xs ) {
+		padding-top: rem( 40 );
+	}
+}
+

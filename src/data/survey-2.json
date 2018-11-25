@@ -1,0 +1,76 @@
+{
+	"id": "2",
+	"title": "How does this application look like?",
+	"questions": [
+		{
+			"id": "1",
+			"title": "Which sentence describe your opinion better?",
+			"type": "radio",
+			"default": "1",
+			"centered": false,
+			"validation": {
+				"required": true,
+				"prompts": {
+					"required": "I want to know your opinion about this application, first."
+				}
+			},
+			"options": [
+				{
+					"id": "1",
+					"title": "Good UI/UX, Good Coding"
+				},
+				{
+					"id": "2",
+					"title": "Good UI/UX, Bad Coding"
+				},
+				{
+					"id": "3",
+					"title": "Bad UI/UX, Good Coding"
+				},
+				{
+					"id": "4",
+					"title": "Bad UI/UX, Bad Coding"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"title": "What should we do next?",
+			"type": "select",
+			"default": "",
+			"centered": false,
+			"validation": {
+				"required": true,
+				"prompts": {
+					"required": "I want to know your total opinion"
+				}
+			},
+			"options": [
+				{
+					"id": "1",
+					"title": "Let's go further and have a talk"
+				},
+				{
+					"id": "2",
+					"title": "We don't want to proceed with you"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"title": "Do you want to add something?",
+			"placeholder": "",
+			"type": "text",
+			"default": "",
+			"centered": false,
+			"validation": {
+				"required": false,
+				"pattern": "",
+				"prompts": {
+					"required": "",
+					"pattern": ""
+				}
+			}
+		},
+	]
+}

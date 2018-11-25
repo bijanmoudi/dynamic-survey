@@ -1,0 +1,44 @@
+
+/*=======================================
+=            Question Module            =
+=======================================*/
+
+.m-question {
+	.question {
+		&__title {
+			display: block;
+			width: 100%;
+			padding-bottom: em( 14, 14 );
+			border-bottom: 1px solid get-color( 'gray-light' );
+			@extend .h3;
+			& + .question__answer {
+				margin-top: em( 14, 14 );
+			}
+			& + .question__input-container {
+				margin-top: em( 35, 14 );
+				@include mq( $until : xs ) {
+					margin-top: em( 28, 14 );
+				}
+			}
+		}
+		&__input-container {
+			text-align: center;
+		}
+		&__input {
+			margin-top: em( 3 );
+			margin-bottom: em( 3 );
+			&:not( .input--centered ) {
+				width: 100%;
+			}
+			@include mq( $until : sm ) {
+				width: 100%;
+			}
+		}
+	}
+	.answer {
+		&--null {
+			color: get-color( 'gray' );
+			font-style: italic;
+		}
+	}
+}

@@ -1,0 +1,110 @@
+
+/*=====================================
+=            Wizard Module            =
+=====================================*/
+
+.wizards__container {
+	& > * {
+		& + * {
+			margin-top: em( 48 );
+		}
+	}
+}
+
+.m-wizard {
+	@extend .hidden--print;
+	font-size: em( 14 );
+	.wizard {
+		&__title {
+			display: flex;
+			margin-top: em( 7, 21 );
+			text-shadow: em( 2, 21 ) em( 2, 21 ) em( 3, 21 ) get-color( 'white' );
+			&::before {
+				content: '?';
+				flex-shrink: 0;
+				display: inline-block;
+				width: em( 35, 21 );
+				height: em( 35, 21 );
+				margin-top: em( -7.5, 21 );
+				margin-right: em( 15, 21 );
+				border-radius: 50%;
+				border: em( 2, 21 ) solid get-color( 'white' );
+				background-color: get-color( 'gray-light' );
+				box-shadow: em( 3, 21 ) em( 2, 21 ) 0 get-color( 'gray' );
+				text-align: center;
+				line-height: em( 35, 21 );
+				color: get-color( 'gray-dark' );
+				font-family: courier;
+			}
+			&::after {
+				content: '';
+				display: block;
+				flex-grow: 1;
+				height: em( 21, 21 );
+				border-top-right-radius: rem( $border-radius );
+				border-bottom-right-radius: rem( $border-radius );
+				background-image: linear-gradient( to left, rgba( get-color( 'white' ), 0.6 ), rgba( get-color( 'white' ), 0 ) );
+			}
+			& + * {
+				margin-top: em( 28, 14 );
+			}
+		}
+		&__progress {
+			position: relative;
+		}
+		&__body {
+			margin-top: em( 33, 14 );
+			border-radius: rem( $border-radius );
+			background-color: get-color( 'white' );
+			box-shadow: 0 0 rem( $box-shadow-blur ) rgba( get-color( 'black' ), 0.15 );
+			& + * {
+				margin-top: em( 14, 14 )
+			}
+		}
+		&__content {
+			padding: em( 48, 14 );
+			border-style: solid;
+			border-width: 0 1px 1px 1px;
+			border-color: get-color( 'gray' );
+			border-bottom-right-radius: rem( $border-radius );
+			border-bottom-left-radius: rem( $border-radius );
+			@include mq( $until : xs ) {
+				padding: em( 34, 14 );
+			}
+		}
+		&__navigation {
+			.navigation {
+				&__items {
+					display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+					justify-content: space-between;
+				}
+				&__tip {
+					max-width: calc( 100% - #{ em( 50, 14 ) } );
+					margin-top: em( 11 );
+					margin-right: em( 50, 14 );
+					float: right;
+				}
+			}
+		}
+	}
+	.progress {
+		&__status {
+			position: absolute;
+			bottom: 100%;
+			font-weight: 700;
+			@include mq( $until : sm ) {
+				@include tooltip--bc;
+				padding: em( 7, 14 );
+				transform: translateX( -50% );
+			}
+		}
+		&__rail {
+			border-bottom-color: get-color( 'silver' );
+			border-top-right-radius: rem( $border-radius );
+			border-top-left-radius: rem( $border-radius );
+			overflow: hidden;
+		}
+	}
+}
