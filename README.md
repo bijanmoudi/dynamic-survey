@@ -31,6 +31,9 @@ You can find a demo here:
   - Take care about zero IDs which can probably cause problems
   - Make PropType checking better
   - Filter questions with faulty data
+  - Prevent content jump occure upon survey navigation, by using height and opacity transitions
+  - Fix UX bug of navigation buttons (moving up and down upon navigation)
+
 
 [LIQID Asset Management GmbH]: <https://www.liqid.de/>
 [https://bijanmoudi.github.io/dynamic-survey/dist/]: <https://bijanmoudi.github.io/dynamic-survey/dist/>
