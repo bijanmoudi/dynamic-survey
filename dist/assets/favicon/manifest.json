@@ -3,7 +3,7 @@
 	"short_name": "DS",
 	"theme_color": "#ef233c",
 	"background_color": "#ffffff",
-	"start_url": "/",
+	"start_url": "./",
 	"display": "minimal-ui",
 	"icons": [
 		{
